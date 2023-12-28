@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+   
+}
+
+body{
+ 
+    width: 100%;
+    font-family: "ClashDisplayVariable-Semibold", sans-serif;
+
+
+}
+
+/* hero  */
+
+.hero {
+    position: relative;
+}
+
+.hero img{
+  width: 100%;
+  height: 700px;
+  
+}
+.logo { 
+    position: absolute;
+    margin: 5% 0 0 5%;
+    /* background-color: aqua; */
+    width: 360px;
+    height: 117px;
+    color: #bab37c;
+    display: flex;
+    top: 0;;
+}
+.logo img {
+    width: 110px;
+    height: 117px;
+}
+
+
+.logo_text h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.logo_text h5 {
+    font-size: 19px;
+    font-weight: 300;
+}
+.hero-caption {
+    /* background-color: aqua; */
+    position: absolute;
+    inset: 0;
+    width: 763px;
+    height: 60px;
+    margin: 201px 0 0 25%;
+}
+.hero-caption h1 {
+    text-align: center;
+    color: #fbfbfb;
+    font-size: 48px;
+    font-weight: 300;
+ 
+}
+.youtube-video {
+    position: absolute;
+    border-radius: 10px;
+
+  }
+
+  /* hero end */
+  
+
+/* Media queries for different screen sizes */
+
+/* For tablets (landscape) and larger */
+@media only screen and (min-width: 768px) {
+    body {
+        height: auto; 
+    }
+    .hero img {
+        height: 500px; 
+    }
+    .logo {
+        margin: 3% 0 0 3%; 
+        width: 280px; 
+        height: 90px; 
+    }
+    .logo img {
+        width: 90px; 
+        height: 90px; 
+    }
+    .logo_text h2 {
+        font-size: 28px; 
+        margin-top: 20px; 
+    }
+    .logo_text h5 {
+        font-size: 16px; 
+    }
+    .hero-caption {
+        width: 563px; 
+        margin: 150px 0 0 15%; 
+    }
+    .hero-caption h1 {
+        font-size: 36px; /
+    }
+    .youtube-video {
+        
+        width: 80%;
+        height: 80%;
+        margin:  -20% 0 0 10%;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        height: auto; 
+    }
+    .hero img {
+        height: 300px; 
+    }
+    .logo {
+        margin: 3% 0 0 3%; 
+        width: 200px; 
+        height: 65px; 
+    }
+    .logo img {
+        width: 45px; 
+        height: 43px; 
+    }
+    .logo_text h2 {
+        font-size: 13px; 
+        margin-top: 15px; 
+    }
+    .logo_text h5 {
+        font-size: 8px; 
+    }
+    .hero-caption {
+        width: 238px; 
+        height: 20px;
+        margin: 100px 0 0 10%; 
+    }
+    .hero-caption h1 {
+        font-size: 16px; 
+    }
+    .youtube-video {
+        width: 80%;
+        height: 50%;
+        margin:  -20% 0 0 10%;
+    }
+}
