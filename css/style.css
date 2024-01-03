@@ -54,28 +54,6 @@ p {
     font-size: 19px;
     font-weight: 300;
 }
-.hero-caption {
-    /* background-color: aqua; */
-    position: absolute;
-    inset: 0;
-    width: 763px;
-    height: 60px;
-    margin: 201px 0 0 25%;
-}
-.hero-caption h1 {
-    text-align: center;
-    color: #fbfbfb;
-    font-size: 48px;
-    font-weight: 300;
- 
-}
-.youtube-video {
-    position: absolute;
-    width: 60%;
-    height: 500px;
-    border-radius: 10px;
-
-  }
 .courses_img {
     width: 270px;
     height: 150px;
@@ -86,7 +64,7 @@ p {
     padding: 50px;
 }
 .why_choose_text_title {
-    margin: 50px;
+    margin: 25px 0 25px 0;
     color: #fff;
 }
 .why_choose_text {
@@ -129,6 +107,9 @@ p {
 .footer_box {
     background-color: black;
     color: #B0B0B0;
+}
+.youtube_box {
+    border-radius: 10px;
 }
 /* .footer_img {
    
@@ -318,8 +299,7 @@ p {
     body {
         height: auto; 
     }
-    .logo_text h2,
-    .hero-caption h1 {
+    .logo_text h2 {
         margin: 0;
     }
     .hero img {
@@ -341,15 +321,18 @@ p {
     .logo_text h5 {
         font-size: 16px; 
     }
-    .hero-caption {
-        width: 563px; 
-        margin: 150px 0 0 27%; 
+    .container_hero_box {
+        margin-top: -300px;
     }
     .hero-caption h1 {
-        font-size: 36px; /
+        color: #fbfbfb;
+        font-size: 48px;
+        font-weight: 300;
+     
     }
-    .youtube-video {
-        margin:  -15% 0 0 20%;
+    .container_youtube_box {
+        margin-top: 40px;
+
     }
     .courses_offer{
         margin-top: 100px;
@@ -394,16 +377,56 @@ p {
         width: 100px;
         padding-top: 35px;
     }
+
+    /* resgister image hiver */
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    
     .register_now_img {
         width: 200px;
+        transition: width 0.3s ease; /* Adding a smooth transition effect */
     }
+    
+    .register_now_img:hover {
+        width: 210px;
+    }
+    
+    /* Overlay styles */
+    .register_now_img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50% transparent black) */
+        z-index: 1;
+        opacity: 0; /* Initially transparent */
+        transition: opacity 0.3s ease; /* Adding transition for smooth effect */
+    }
+    
+    .image-container:hover .register_now_img::before {
+        opacity: 1; /* Show the overlay on hover */
+    }
+    
+    /* Shade effect */
+    .register_now_img:hover {
+        filter: brightness(70%); /* Adjust brightness for shade effect */
+    }
+    
+    /* resgister image hiver end */
+
     .logo_img {
         width: 200px;
         padding: 10px 0 0 10px;
     }
     .footer_address_contact {
         padding: 30px 0 0 50px;
-        width: 200px;
+        width: 500px;
+        /* background-color: #fbfbfb; */
         word-wrap: break-word;
     }
     
@@ -417,8 +440,7 @@ p {
     body {
         height: auto; 
     }
-    .logo_text h2,
-    .hero-caption h1 {
+    .logo_text h2{
         margin: 0;
     }
     .hero img {
@@ -440,18 +462,18 @@ p {
     .logo_text h5 {
         font-size: 8px; 
     }
-    .hero-caption {
-        width: 290px; 
-        height: 28px;
-        margin: 100px 0 0 30%; 
+    .container_hero_box {
+        margin-top: -250px;
     }
     .hero-caption h1 {
-        font-size: 20px; 
+        color: #fbfbfb;
+        font-size: 20px;
+        font-weight: 300;
+     
     }
-    .youtube-video {
-        width: 80%;
-        height: 230px;
-        margin:  -26% 0 0 10%; 
+    .container_youtube_box {
+    margin-top: 50px;
+
     }
     .courses_offer{
         margin-top: 300px;
@@ -500,10 +522,45 @@ p {
         word-wrap: break-word;
     }
     .discount_box_img {
-        width: 100px;
-        padding-top: 35px;
+        display: none;
     }
+    /* resgister image hiver */
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    
     .register_now_img {
-    width: 200px;}
+        width: 150px;
+        transition: width 0.3s ease; /* Adding a smooth transition effect */
+    }
+    
+    .register_now_img:hover {
+        width: 160px;
+    }
+    
+    /* Overlay styles */
+    .register_now_img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50% transparent black) */
+        z-index: 1;
+        opacity: 0; /* Initially transparent */
+        transition: opacity 0.3s ease; /* Adding transition for smooth effect */
+    }
+    
+    .image-container:hover .register_now_img::before {
+        opacity: 1; /* Show the overlay on hover */
+    }
+    
+    /* Shade effect */
+    .register_now_img:hover {
+        filter: brightness(70%); /* Adjust brightness for shade effect */
+    }
+    /* resgister image hiver end*/
    
 }
