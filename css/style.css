@@ -522,7 +522,7 @@ p {
         padding: 30px 0 0 18px;
         width: 170px;
         word-wrap: break-word;
-        /* background-color: #D7AB00; */
+        background-color: #D7AB00;
     }
     .discount_box_img {
         display: none;
