@@ -142,7 +142,13 @@ span {
     width: 270px;
     height: 150px;
     border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+.courses_img:hover {
+    transform: scale(1.1);
+    filter: brightness(50%) opacity(0.8);
+}
+
 .why_choose {
     background-color: black;
     padding: 50px;
@@ -164,8 +170,6 @@ span {
 .counter_test {
     width: 100%;
     height: 100px;
-    background-color: aqua;
-    /* padding-top: 40px; */
 }
 .box_1 {
     height: 100px;
@@ -194,6 +198,14 @@ span {
 }
 .youtube_box {
     border-radius: 10px;
+}
+.youtube_box_effect {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Adding transitions */
+    
+}
+.youtube_box_effect:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 .btn_custom {
     margin: 50px 0 50px 0;
@@ -264,7 +276,13 @@ span {
         width: 170px;
         height: 100px;
         margin: 30px;
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
+    .why_choose_img:hover {
+        transform: scale(1.1);
+        filter: brightness(50%) opacity(0.8);
+    }
+    
     .btn_custom button{
         border-radius: 10px;
         width: 120px;
@@ -282,6 +300,15 @@ span {
         margin-bottom: 90px;
         
     }
+    .embed-responsive-item {
+        transition: transform 0.3s ease;
+    }
+    
+    .zoom-effect:hover {
+        transform: scale(1.05);
+        z-index: 1;
+        filter: brightness(50%) opacity(0.8);
+    }
     .footer_img {
         width: 150px;
         position: absolute;
@@ -291,47 +318,26 @@ span {
         width: 100px;
         padding-top: 35px;
     }
-
-    /* resgister image hiver */
-
-    .image-container {
-        position: relative;
-        display: inline-block;
+    .discount_box_img_hover {
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
-    
+    .discount_box_img_hover:hover {
+        transform: scale(1.1);
+    }
+
+    /* resgister image hover */
+  
     .register_now_img {
         width: 200px;
-        transition: width 0.3s ease; /* Adding a smooth transition effect */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Adding transitions */
     }
     
     .register_now_img:hover {
-        width: 210px;
+        transform: scale(1.05); /* Scale up the image by 5% on hover */
+        filter: brightness(50%) opacity(0.8); /* Apply filter for darkened effect */
     }
-    
-    /* Overlay styles */
-    .register_now_img::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50% transparent black) */
-        z-index: 1;
-        opacity: 0; /* Initially transparent */
-        transition: opacity 0.3s ease; /* Adding transition for smooth effect */
-    }
-    
-    .image-container:hover .register_now_img::before {
-        opacity: 1; /* Show the overlay on hover */
-    }
-    
-    /* Shade effect */
-    .register_now_img:hover {
-        filter: brightness(70%); /* Adjust brightness for shade effect */
-    }
-    
-    /* resgister image hiver end */
+
+    /* resgister image hiver */
 
     .logo_img {
         width: 200px;
@@ -340,7 +346,6 @@ span {
     .footer_address_contact {
         padding: 30px 0 0 50px;
         width: 600px;
-        /* background-color: #fbfbfb; */
         word-wrap: break-word;
     }
     .calendly_box {
@@ -450,44 +455,19 @@ span {
     .discount_box_img {
         display: none;
     }
-    /* resgister image hiver */
-    .image-container {
-        position: relative;
-        display: inline-block;
-    }
+    /* resgister image hover */
     
     .register_now_img {
         width: 150px;
-        transition: width 0.3s ease; /* Adding a smooth transition effect */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Adding transitions */
     }
     
     .register_now_img:hover {
-        width: 160px;
+        transform: scale(1.05); /* Scale up the image by 5% on hover */
+        filter: brightness(50%) opacity(0.8); /* Apply filter for darkened effect */
     }
-    
-    /* Overlay styles */
-    .register_now_img::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50% transparent black) */
-        z-index: 1;
-        opacity: 0; /* Initially transparent */
-        transition: opacity 0.3s ease; /* Adding transition for smooth effect */
-    }
-    
-    .image-container:hover .register_now_img::before {
-        opacity: 1; /* Show the overlay on hover */
-    }
-    
-    /* Shade effect */
-    .register_now_img:hover {
-        filter: brightness(70%); /* Adjust brightness for shade effect */
-    }
-    /* resgister image hiver end*/
+    /* resgister image hiver end */
+
     .calendly_box {
         min-width:280px;
         height: 790px;
