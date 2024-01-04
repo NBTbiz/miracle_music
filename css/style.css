@@ -9,9 +9,7 @@
 }
 body{
     font-family: 'Clash Display Variable';
-    src: url('font_style/ClashDisplay-Variable.ttf') format('truetype');
     width: 100%;
-    /* font-family: "ClashDisplayVariable-Semibold", sans-serif; */
 }
 p {
     font-size: 15px;
@@ -24,14 +22,8 @@ h6 {
 span {
     margin: 0;
 }
-/* h3 {
-
-} */
-
-
 
 /* hero  */
-
 .hero {
     position: relative;
 }
@@ -54,8 +46,6 @@ span {
     width: 110px;
     height: 117px;
 }
-
-
 .logo_text h2 {
     font-size: 30px;
     font-weight: 500;
