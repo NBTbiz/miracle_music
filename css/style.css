@@ -2,7 +2,11 @@
     margin: 0px;
    
 }
-
+@font-face {
+    font-family: 'Clash Display Variable';
+    src: url('font_style/ClashDisplay-Variable.ttf') format('truetype');
+    /* Add other font formats (woff, woff2, etc.) for better browser support */
+}
 body{
     font-family: 'Clash Display Variable';
     src: url('font_style/ClashDisplay-Variable.ttf') format('truetype');
