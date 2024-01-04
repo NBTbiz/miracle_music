@@ -17,13 +17,21 @@
     <meta name="author" content="">
   </head>
   <body>
-    
-    <!-- hero -->
-    <div class="overlay-container-fluid">
-        <div class="hero">
-            <img src="images/hero.webp" />
+    <!-- loader -->
+        <div class="loader">
+            <div class="container">
+                <div class="text-center loader_text">
+                    <h3>Miracle Music Academy</h3>
+                </div>
+            </div>
         </div>
-    </div>
+    <!-- loader end -->
+    <!-- hero -->
+        <div class="overlay-container-fluid">
+            <div class="hero">
+                <img src="images/hero.webp" />
+            </div>
+        </div>
     <!-- logo -->
         <div class="logo">
             <img class="logo-t-1" src="images/logoT.png" />
@@ -276,7 +284,7 @@
                 <div class="row">
                     <div class="col-md-3 col-lg-2 footer_address_contact footer_address">
                         <h5>Address</h5>
-                        <p>Ambattukavu, &nbsp;&nbsp; <br> Choornikkara, <br> Aluva-683501</p>
+                        <p>Ambattukavu, &nbsp; Choornikkara, &nbsp; Aluva-683501</p>
                     </div>
                     <div class="col-md-3 col-lg-4 footer_address_contact footer_contact">
                         <h5>Contact Us</h5>
@@ -294,6 +302,17 @@
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Show the loader initially
+                document.querySelector('.loader').style.display = 'block';
+
+                // Hide the loader after some time (5 seconds)
+                setTimeout(function() {
+                    document.querySelector('.loader').style.display = 'none';
+                    document.querySelector('.content').style.display = 'block'; // Show the content
+                }, 5000); // Adjust the time as needed
+            });
+
         $(document).ready(function() {
         $('.count').each(function() {
             var $this = $(this);
