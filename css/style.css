@@ -4,14 +4,21 @@
 }
 
 body{
- 
+    font-family: 'Clash Display Variable';
+    src: url('font_style/ClashDisplay-Variable.ttf') format('truetype');
     width: 100%;
-    font-family: "ClashDisplayVariable-Semibold", sans-serif;
+    /* font-family: "ClashDisplayVariable-Semibold", sans-serif; */
 }
 p {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 400;
 
+}
+h6 {
+    margin: 0;
+}
+span {
+    margin: 0;
 }
 /* h3 {
 
@@ -46,8 +53,8 @@ p {
 
 
 .logo_text h2 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
 }
 .logo_text h5 {
     font-size: 19px;
@@ -119,186 +126,10 @@ p {
 .calendly_box_colr {
     background-color: #D9D9D9;
 }
-/* .footer_img {
-   
+.container_box_counter {
+    background-color: #D7AB00;
+}
 
-} */
-
-
-
-
-/*  */
-
-.desktop-2 {
-    background: #ffffff;
-    width: 1440px;
-    height: 136px;
-    position: relative;
-    overflow: hidden;
-    }
-
- .counter-section {
-    position: absolute;
-    inset: 0;
-    }
-
- .counter {
-    background: #ffff00;
-    width: 1440px;
-    height: 112.34px;
-    position: absolute;
-    left: calc(50% - 720px);
-    top: calc(50% - 56px);
-    }
-
- .line-group {
-    width: 630px;
-    height: 58px;
-    position: absolute;
-    left: 405px;
-    top: 39px;
-    overflow: visible;
-    }
-
- .boxs {
-    width: 1039px;
-    height: 40px;
-    position: static;
-    }
-
- .counter-box-1 {
-    width: 124px;
-    height: 40px;
-    position: static;
-    }
-
- ._500 {
-    color: #000000;
-    text-align: center;
-    font-family: 'NotoSansTelugu-Bold', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: 249px;
-    top: 50px;
-    width: 46px;
-    height: 23px;
-    }
-
- .active-students {
-    color: #000000;
-    text-align: center;
-    font-family: 'ClashDisplayVariable-Light', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    position: absolute;
-    left: 210px;
-    top: 70px;
-    width: 124px;
-    height: 20px;
-    }
-
- .counter-box-2 {
-    width: 124px;
-    height: 40px;
-    position: static;
-    }
-
- ._256 {
-    color: #000000;
-    text-align: center;
-    font-family: 'NotoSansTelugu-Bold', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: 537px;
-    top: 50px;
-    width: 47px;
-    height: 23px;
-    }
-
- .testimonial {
-    color: #000000;
-    text-align: center;
-    font-family: 'ClashDisplayVariable-Light', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    position: absolute;
-    left: 499px;
-    top: 70px;
-    width: 124px;
-    height: 20px;
-    }
-
- .counter-box-3 {
-    width: 124px;
-    height: 40px;
-    position: static;
-    }
-
- ._10 {
-    color: #000000;
-    text-align: center;
-    font-family: 'NotoSansTelugu-Bold', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: 853px;
-    top: 50px;
-    width: 51px;
-    height: 23px;
-    }
-
- .active-teacher {
-    color: #000000;
-    text-align: center;
-    font-family: 'ClashDisplayVariable-Light', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    position: absolute;
-    left: 817px;
-    top: 70px;
-    width: 124px;
-    height: 20px;
-    }
-
- .counter-box-4 {
-    width: 124px;
-    height: 38px;
-    position: static;
-    }
-
- ._321 {
-    color: #000000;
-    text-align: center;
-    font-family: 'NotoSansTelugu-Bold', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    left: 1163px;
-    top: 50px;
-    width: 47px;
-    height: 23px;
-    }
-
- .live-session-done {
-    color: #000000;
-    text-align: center;
-    font-family: 'ClashDisplayVariable-Light', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
-    position: absolute;
-    left: 1125px;
-    top: 68px;
-    width: 124px;
-    height: 20px;
-    }
-
-
-
-/*  */
-
-  
 
 /* Media queries for different screen sizes */
 
@@ -581,6 +412,12 @@ p {
     .calendly_box {
         min-width:280px;
         height: 790px;
+    }
+    .counter_tex {
+        font-size: 8px;
+    }
+    .counter_box {
+        width: 90px;
     }
    
 }
