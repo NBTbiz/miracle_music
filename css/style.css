@@ -186,6 +186,7 @@ span {
 }
 .container_box_counter {
     background-color: #D7AB00;
+    margin-bottom: 50px;
 }
 
 /* Media queries for different screen sizes */
@@ -474,7 +475,7 @@ span {
         font-size: 7px;
     }
     .counter_box {
-        width: 90px;
+        width: 93px;
     }
    
 }
