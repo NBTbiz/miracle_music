@@ -72,7 +72,7 @@ body{
 	  left: 100%;
 	}
   }
-  
+
 /* loader end */
 
 p {
@@ -187,7 +187,6 @@ span {
 .container_box_counter {
     background-color: #D7AB00;
 }
-
 
 /* Media queries for different screen sizes */
 
@@ -472,7 +471,7 @@ span {
         height: 790px;
     }
     .counter_tex {
-        font-size: 8px;
+        font-size: 7px;
     }
     .counter_box {
         width: 90px;
