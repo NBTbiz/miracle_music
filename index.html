@@ -15,6 +15,8 @@
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="">
+        
+        <link rel="preload" href="images/hero.webp" as="image">
     </head>
     <body>
     <!-- loader -->
@@ -29,7 +31,7 @@
     <!-- hero -->
         <div class="overlay-container-fluid">
             <div class="hero">
-                <img src="images/hero.webp" />
+                <img src="images/hero.webp" alt="Hero Image" />
             </div>
         </div>
     <!-- logo -->
@@ -80,7 +82,7 @@
             <div class="row">
                 <div class="col-md-12 text-center btn_custom">
                     <a href="#calendly-container">
-                        <button >Book Now</button>
+                        <button class="golden-btn">Book Now</button>
                     </a>
                 </div>
             </div>
@@ -136,7 +138,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-lg-3">
                         <div class="text-center">
-                            <i><img class="courses_img img-fluid" src="images/course2.webp" alt="#"/></i>
+                            <i><img class="courses_img img-fluid" src="images/course2.webp" alt="#" loading="lazy" /></i>
                         </div>
                         <div class="text-center">
                             <h4>Western Vocals</h4>
@@ -145,7 +147,7 @@
                     </div>
                     <div class="col-md-4 col-lg-3">
                         <div class="text-center">
-                            <i><img class="courses_img img-fluid" src="images/course1.webp" alt="#"/></i>
+                            <i><img class="courses_img img-fluid" src="images/course1.webp" alt="#" loading="lazy" /></i>
                         </div>
                         <div class="text-center">
                             <h4>Carnatic Music</h4>
@@ -154,12 +156,19 @@
                     </div>
                     <div class="col-md-4 col-lg-3">
                         <div class="text-center">
-                            <i><img class="courses_img img-fluid" src="images/course3.webp" alt="#"/></i>
+                            <i><img class="courses_img img-fluid" src="images/course3.webp" alt="#" loading="lazy" /></i>
                         </div>
                         <div class="text-center">
                             <h4>Instruments</h4>
                             <p>Master Piano,&nbsp; Guitar,&nbsp; and Violin,&nbsp; Dive into Harmonious Learning Adventures! &nbsp;Elevate Your Musical Journey Now!</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center btn_custom">
+                        <a href="#calendly-container">
+                            <button class="golden-btn">Book Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -208,7 +217,7 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="text-center">
-                            <img class="why_choose_img" src="images/choose1.webp" alt="#"/>
+                            <img class="why_choose_img" src="images/choose1.webp" alt="#" loading="lazy" />
                         </div>
                         <div class="why_choose_text text-center">
                             <h4>Exposure</h4>
@@ -217,7 +226,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="text-center">
-                            <img class="why_choose_img" src="images/choose2.webp" alt="#"/>
+                            <img class="why_choose_img" src="images/choose2.webp" alt="#" loading="lazy" />
                         </div>
                         <div class="why_choose_text text-center">
                             <h4>Certified Teachers</h4>
@@ -226,7 +235,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="text-center">
-                            <img class="why_choose_img" src="images/choose3.webp" alt="#"/>
+                            <img class="why_choose_img" src="images/choose3.webp" alt="#" loading="lazy" />
                         </div>
                         <div class="why_choose_text text-center">
                             <h4>Language Development</h4>
@@ -235,12 +244,19 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="text-center">
-                            <img class="why_choose_img " src="images/choose4.webp" alt="#"/>
+                            <img class="why_choose_img " src="images/choose4.webp" alt="#" loading="lazy" />
                         </div>
                         <div class="why_choose_text text-center">
                             <h4>Performance Grooming</h4>
                             <p>Our classes help with gaining confidence and getting up on stage and performing.</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center btn_custom">
+                        <a href="#calendly-container">
+                            <button class="golden-btn">Book Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -263,7 +279,7 @@
                 <div class="row col-md-9 justify-content-center">
                     <div class="image-container"> 
                         <a href="#calendly-container">
-                            <img class="register_now_img" src="images/register_now.png" alt="">
+                            <img class="register_now_img" src="images/register_now.png" alt="Liading" loading="lazy" />
                         </a>
                     </div>
                 </div>
@@ -307,11 +323,11 @@
             // Show the loader initially
             document.querySelector('.loader').style.display = 'block';
         
-            // Hide the loader after some time (5 seconds)
+            // Hide the loader after some time (3 seconds)
             setTimeout(function() {
                 document.querySelector('.loader').style.display = 'none';
                 document.querySelector('.content').style.display = 'block'; // Show the content
-            }, 2000); // Adjust the time as needed
+            }, 3000); // Adjust the time as needed
         });
         // loader end
 
@@ -322,7 +338,7 @@
             // Function to start the counting animation for each element
             function startCount(el) {
                 let goal = parseInt(el.dataset.goal, 10);
-                let startTime = 3000; // Delay start time in milliseconds (3 seconds)
+                let startTime = 4000; // Delay start time in milliseconds (3 seconds)
                 
                 setTimeout(() => {
                     let count = setInterval(() => {
@@ -337,6 +353,27 @@
             // Start counting for each element after 3 seconds
             nums.forEach((num) => startCount(num));
         // counter end
+        
+        // for lazy loading 
+            const lazyImages = document.querySelectorAll('.lazy');
+
+            const lazyLoad = target => {
+                const io = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute('data-src');
+                            img.setAttribute('src', src);
+                            img.classList.remove('lazy');
+                            observer.disconnect();
+                        }
+                    });
+                });
+
+                io.observe(target);
+            };
+
+            lazyImages.forEach(lazyLoad);
     </script>
     <!-- calendly -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
