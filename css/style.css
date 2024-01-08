@@ -7,6 +7,9 @@
     src: url('fonts/ClashDisplay-Variable.ttf') format('truetype');
     /* Add other font formats (woff, woff2, etc.) for better browser support */
 }
+#main-content {
+    display: none;
+}
 
 /* Style the custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
 body::-webkit-scrollbar {
