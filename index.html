@@ -28,6 +28,24 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         
         <link rel="preload" href="images/hero.webp" as="image">
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '151878837933391');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=151878837933391&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Meta Pixel Code -->
     </head>
     <body>
     <!-- loader -->
@@ -40,26 +58,21 @@
         </div>
     <!-- loader end -->
     <div class="main-content">
-    <!-- whatsapp -->
-        <a href="https://wa.me/+919995113575" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    <!-- whatsapp end -->
-    <!-- hero -->
+        <!-- hero -->
         <div class="overlay-container-fluid">
             <div class="hero">
                 <img src="images/hero.webp" alt="Hero Image" />
             </div>
         </div>
-    <!-- logo -->
+        <!-- logo -->
         <div class="logo">
             <img class="logo-t-1" src="images/logoT.png" />
-                <div class="logo_text">
-                    <h2>Miracle Music</h2>
+            <div class="logo_text">
+                <h2>Miracle Music</h2>
                 <h5>Miracle Music Academy</h5>
             </div>
         </div>
-    <!-- logo end -->
+        <!-- logo end -->
         <div class="container container_hero_box">
             <div class="row">
                 <div class="col-md-12">
@@ -76,8 +89,13 @@
                 </div>
             </div>
         </div>
-    <!-- hero end -->
-    <!-- youtube  -->
+        <!-- hero end -->
+        <!-- whatsapp -->
+            <a href="https://wa.me/+919995113575" class="btn-whatsapp-pulse btn-whatsapp-pulse-border" id="whatsappButton" style="display: none;">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        <!-- whatsapp end -->
+        <!-- youtube  -->
         <div class="container container_youtube_box">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -390,6 +408,11 @@
             };
 
             lazyImages.forEach(lazyLoad);
+
+        // JavaScript to show the WhatsApp button after a delay
+            setTimeout(function() {
+                document.getElementById('whatsappButton').style.display = 'flex';
+            }, 3000); // Delay in milliseconds (here, 3000ms = 3 seconds)
     </script>
     <!-- calendly -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
