@@ -264,6 +264,13 @@ span {
     background-color: #ffcc01a1;
     margin-bottom: 50px;
 }
+.whatsapp-icon {
+    position: fixed;
+    color: green;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+}
 
 /* Media queries for different screen sizes */
 
@@ -396,6 +403,9 @@ span {
         min-width:280px;
         height:890px;
     }
+    .whatsapp-icon {
+        font-size: 60px;
+    }
     
     
     
@@ -522,5 +532,7 @@ span {
     .counter_box {
         width: 91.5px;
     }
-   
+    .whatsapp-icon {
+        font-size: 40px;
+    }
 }
