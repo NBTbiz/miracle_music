@@ -99,6 +99,16 @@ body{
 	}
   }
 
+  .lotty_style {
+    width: 100px;
+    /* margin: 0px; */
+    margin-left: 270px;
+    margin-bottom: 80px;
+    /* padding-bottom: 400p; */
+    /* background-color: black; */
+    position: absolute;
+  }
+
 /* loader end */
 
 p {

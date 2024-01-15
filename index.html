@@ -18,7 +18,7 @@
         <meta name="description" content="Best online music classes for Carnatic , western vocals , instrument Classes for kids and adults in Kochi ,Kerala | Top certified instructor by Miracle Music Academy">
         <meta name="keywords" content="Top Music Classes in Ernakulam - Music Classes in Kochi Online Music Classes in Kerala\ online music classes in kochi ,kerala  music classes for kids Best Music Classes in kerala Miracle Music Academy ,music academy in Kochi music academy best music academy in kochi, music academy near me ,music classes near me, music classes near me for kids ,music instrument classes near me ,music notes ,music online ,music school ,music school near me,music Class in kerala ">
         <meta name="author" content="Miracle Music">
-        <meta name="robots" content="INDEX, FOLLOW">">
+        <meta name="robots" content="INDEX, FOLLOW">
 
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -28,7 +28,6 @@
 
         <!-- whatsapp -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     
         
         <link rel="preload" href="images/hero.webp" as="image">
 
@@ -57,7 +56,10 @@
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','GTM-NC3GNLZK');
         </script>
-    <!-- End Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script>
+    
     </head>
     <body>
     <!-- Google Tag Manager (noscript) -->
@@ -70,9 +72,14 @@
     <!-- loader -->
         <div class="loader">
             <div class="container">
+                <div id="animation" class="lotty_style"></div>
                 <div class="text-center loader_text">
                     <h3>Miracle Music Academy</h3>
                 </div>
+            </div>
+            <!-- <div class="container-fluid">
+                    
+                </div> -->
             </div>
         </div>
     <!-- loader end -->
@@ -368,74 +375,31 @@
         </div>
     <!-- footer end-->
     </div>
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // <!-- loader --> 
-        document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            document.querySelector('.loader').style.display = 'none';
-            document.querySelector('.content').style.display = 'block';
-        }, 3000);
-        setTimeout(function() {
-        document.querySelector('.myDiv').style.display = 'block';
-        }, 3000);
+        // Replace 'miracle_music.json' with the path to your downloaded JSON file
+        const animationData = 'miracle_music.json';
+
+        // Replace 'animation' with the ID of the div element
+        // where you want to render the animation
+        const animationContainer = document.getElementById('animation');
+
+        // Set up Lottie
+        const animation = lottie.loadAnimation({
+            container: animationContainer,
+            renderer: 'svg', // Use 'svg' for better compatibility
+            loop: true, // Set to true for looped animation
+            autoplay: true, // Set to true for autoplay
+            path: animationData // Provide the path to your JSON file
         });
-        // <!-- loader end --> 
-        // <!-- counter --> 
-        // Select all elements with class ".nums .num"
-            let nums = document.querySelectorAll(".nums .num");
-
-            // Function to start the counting animation for each element
-            function startCount(el) {
-                let goal = parseInt(el.dataset.goal, 10);
-                let startTime = 4000; // Delay start time in milliseconds (3 seconds)
-                
-                setTimeout(() => {
-                    let count = setInterval(() => {
-                            el.textContent++;
-                            if (parseInt(el.textContent, 10) === goal) {
-                                clearInterval(count);
-                            }
-                        }, 3000 / goal); // Adjust speed: 2000 milliseconds divided by goal
-                    }, startTime);
-                }
-
-            // Start counting for each element after 3 seconds
-            nums.forEach((num) => startCount(num));
-        // <!-- counter end -->
-        
-        // <!-- for lazy loading --> 
-            const lazyImages = document.querySelectorAll('.lazy');
-
-            const lazyLoad = target => {
-                const io = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target;
-                            const src = img.getAttribute('data-src');
-                            img.setAttribute('src', src);
-                            img.classList.remove('lazy');
-                            observer.disconnect();
-                        }
-                    });
-                });
-
-                io.observe(target);
-            };
-
-            lazyImages.forEach(lazyLoad);
-
-            setTimeout(function() {
-                document.getElementById('whatsappButton').style.display = 'flex';
-                }, 4000); // Delay in milliseconds (here, 4000ms = 4 seconds)
-            // <!-- for lazy loading end --> 
     </script>
+    <!-- Optional JavaScript -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- calendly -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     </body>
 </html> 
