@@ -35,7 +35,7 @@ body{
     scrollbar-width: thin;
     scrollbar-color: transparent transparent; /* Hide scrollbar in Firefox */
 
-    cursor: url('../images/design.png'), auto;
+    /* cursor: url('../images/design.png'), auto; */
 }
 
 /* Initially hide the loader and content */
@@ -393,7 +393,8 @@ input[type=radio] {
   -moz-appearance: radio !important;
   -webkit-appearance: radio !important;
   -o-appearance: radio !important;
-  -ms-appearance: radio !important; }
+  -ms-appearance: radio !important; 
+}
 
 .container_reg {
     width: 100%;
@@ -606,8 +607,13 @@ input[type=radio] {
       -ms-border-radius: 5px;
       margin-top: 25px;
       cursor: pointer; }
-      .form-submit:hover {
-        background: #4292dc; }
+    .form-submit:hover {
+      background: #4292dc; }
+    
+    /* .gender_div {
+        padding-right: 22px;
+        color: #118e3f;
+    } */
 
 
 /* registration form  */

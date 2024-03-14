@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="manifest" href="images/site.webmanifest">
 
-    <title>Best online music class in kochi , kerala by Miracle Music Academy</title>
+    <title>Best online music classes                in kochi , kerala by Miracle Music Academy</title>
     <meta name="description"
         content="Best Online Music Classes for Carnatic, Western Vocals, Instrument Classes for Kids and Adults in Kochi, Kerala | Top Certified Instructor by Miracle Music Academy">
     <meta name="keywords"
@@ -90,9 +90,6 @@
                 <h3>Miracle Music Academy</h3>
             </div>
         </div>
-        <!-- <div class="container-fluid">
-                    
-                </div> -->
     </div>
     </div>
     <!-- loader end -->
@@ -183,7 +180,7 @@
         </div>
         <!-- counter end  -->
         <!-- Calendly -->
-        <div class="container-fluid calendly_box_colr" >
+        <!-- <div class="container-fluid calendly_box_colr" >
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div id="calendly-section">
@@ -193,7 +190,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Calendly end -->
         <!-- courses -->
         <div class="courses_offer">
@@ -391,6 +388,45 @@
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email" required />
                             </div>
+                            <!-- <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="#" class="term-service">Terms of service</a></label>
+                            </div> -->
+                            <!-- <div class="form-group">
+
+                                <label for="agree-term" class="label-agree-term">
+                                    <span><span></span></span>Have you taken music lessons before?
+                                </label>
+                                <br>
+                                <input type="redio" name="yesOrNo" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>Yes</label>
+                                <input type="redio" name="yesOrNo" id="agree-term"  />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>No</label>
+
+                            </div> -->
+                            <!-- <div class="form-group">
+                                <label for="music-lessons" class="label-agree-term">
+                                    <span><span></span></span>Have you taken music lessons before?
+                                </label>
+                                <br>
+                                <label for="music-lessons-yes" class="label-agree-term">Yes</label>
+                                <input type="radio" name="gender" class="" id="" >
+                                <label for="music-lessons-no" class="label-agree-term">No</label>
+                                <input type="radio" name="gender" id=""> 
+                            </div> -->
+                            <!-- <div class="form-group">
+                               
+                                <div class="form-radio-item">
+                                    <input type="radio" name="gender" id="male" >
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" name="gender" id="female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div> -->
+                            
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
                             </div>
@@ -424,57 +460,43 @@
                         <h5>Contact Us</h5>
                         <p>+919995113575 <br> miraclemusicacademyofficial@gmail.com</p>
                     </div>
-                    <!-- <div class="col-sm-4">
-                        <img class="footer_img" src="images/footer.png" alt="">
-
-                    </div> -->
                 </div>
             </div>
         </div>
         <!-- footer end-->
-
-
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            document.getElementById('register-form').addEventListener('submit', function (e) {
-                e.preventDefault(); // Prevent form submission
-                var name = document.getElementById('name').value;
-                var phone = document.getElementById('phone').value;
-                var email = document.getElementById('email').value;
-
-                var subject = "Registration form (From Miracle website)";
-                var body = "Full name: " + name + "\nPhone: " + phone + "\nEmail: " + email;
-
-                Email.send({
-                    SecureToken: "062ca706-9d72-4c74-85e8-907c3df3de15",
-                    To: 'sooraj@miraclemusicacademy.com',
-                    From: "imad@nbtbiz.com",
-                    Subject: subject,
-                    Body: body
-                }).then(
-                    function (message) {
-                        alert('Email sent successfully');
-                        // Clear form values
-                        document.getElementById('register-form').reset();
-                    }
-                );
-
-
-            });
-        </script>
-
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        document.getElementById('register-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
 
+            var subject = "Registration form (From Miracle website)";
+            var body = "Full name: " + name + "\nPhone: " + phone + "\nEmail: " + email;
 
+            Email.send({
+                SecureToken: "062ca706-9d72-4c74-85e8-907c3df3de15",
+                To: 'sooraj@miraclemusicacademy.com',
+                From: "imad@nbtbiz.com",
+                Subject: subject,
+                Body: body
+            }).then(
+                function (message) {
+                    alert('Email sent successfully');
+                    // Clear form values
+                    document.getElementById('register-form').reset();
+                }
+            );
+        });
     </script>
-
-
 
     <!-- Optional JavaScript -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- calendly -->
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
